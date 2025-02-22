@@ -284,3 +284,34 @@ html{
       margin: 0px 0px 10px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+    /*contac section*/
+   .container-contact {
+         background-image: url(https://i.ibb.co/pB1Smvg0/contact-bg.png);
+         background-color: #1e2326;
+         color: white;
+    }
+
+    .container-contact p {
+      text-align: center;
+      padding: 1rem;
+    }
+
+
+    .container-contact h2 {
+
+        padding-bottom: 3rem;
+ 
+      }
+    .container-contact .contact-data {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1rem ;
+    }
+
+    .container-contact .contact-data .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: felx-start;
+    }
