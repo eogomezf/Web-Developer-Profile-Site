@@ -54,10 +54,11 @@ html{
   }
 /*hero section*/
   .hero {
-    padding-top: 150px;
-    background-color:#252A2E;
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.9), rgba(30, 35, 38, 0.9)), url(https://i.ibb.co/Tq8yQQCs/bg-service.jpg); 
+    background-size: cover;
     color: white;
-    height: 80vh;
+    padding-top: 100px;
+    height: 75vh; 
   }
 
   .hero .container-hero{
@@ -391,7 +392,7 @@ html{
         text-align: center;
     }
 
-    footer img {
+    footer a img {
         display: block;
         position: fixed;
         width: 50px;
@@ -400,4 +401,39 @@ html{
         background-color: rgb(112, 204, 166);
         left: 95%;
         top: 89%;
+    }
+
+    footer .data-footer {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    footer .data-footer p{
+        height: 20px;
+    }
+
+    footer .redes {
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px;
+    }
+
+
+    footer .redes a img {
+        padding: 0;
+        margin-left: 15px;
+        width: 25px;
+        color: white;
+        text-decoration: none;
+        position: relative;
+        left: 50%;
+        top: 0%;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    footer .redes a:hover{
+       background-color: #252A2E 0.5;
     }
