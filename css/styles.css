@@ -193,31 +193,44 @@ html{
     width: 230px;
     height: 205px;
     border-radius: 16px;
-    
     background-color: rgb(255, 255, 255);
     margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-
+   
   }
 
   .certifications .cert:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 10px;
     width: 232px;
     height: 207px;
-    color: rgb(111, 111, 111);
+    
    
   }
 
-  .certifications .cert img {
-    max-height: 80px;
- 
+  .certifications .cert a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
   }
 
-  .certifications .cert p {
+  .certifications .cert a:visited {
+    color: black;
+  }
+
+  .certifications .cert a:hover {
+    color: rgb(111, 111, 111);
+  }
+
+
+  .certifications .cert a img {
+    max-height: 80px;
+    text-align: center;
+  }
+
+  .certifications .cert a p {
     max-height: 100px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -367,4 +380,24 @@ html{
 
     .container-contact .contact-data .info ul li {
         margin-bottom: 0.875rem;
+    }
+
+        /*footer section*/
+
+    footer {
+        background-color: #252A2E;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    footer img {
+        display: block;
+        position: fixed;
+        width: 50px;
+        padding: 0.2rem;
+        border-radius: 20%;
+        background-color: rgb(112, 204, 166);
+        left: 95%;
+        top: 89%;
     }
