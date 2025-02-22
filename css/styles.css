@@ -15,7 +15,7 @@ html{
   }
 
   .container-header {
-    background-color: rgb(51, 34, 34);
+    background-color: black;
     /* position: fixed; */
     width: 100%;
     top: 0;
@@ -55,7 +55,7 @@ html{
 /*hero section*/
   .hero {
     padding-top: 150px;
-    background-color: black;
+    background-color:#252A2E;
     color: white;
     height: 80vh;
   }
@@ -299,10 +299,9 @@ html{
 
 
     .container-contact h2 {
+        padding-bottom: 1rem;
+    }
 
-        padding-bottom: 3rem;
- 
-      }
     .container-contact .contact-data {
       display: flex;
       justify-content: space-evenly;
@@ -314,4 +313,58 @@ html{
       flex-direction: column;
       justify-content: space-between;
       align-items: felx-start;
+    }
+
+    .container-contact .contact-data .contact input , .container-contact .contact-data .contact textarea {
+      display:block;
+      width: 100%;
+      border: none;
+      padding: 0.5rem;
+      margin-bottom: 0;
+      background-color: #252A2E;
+      color: white;
+    }
+
+    .container-contact .contact-data .contact button {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      width: fit-content;
+      display: block;
+      padding: 0.5rem 0.9rem;
+      cursor: pointer;
+      position: relative;
+      /* z-index: 10; */
+    }
+
+    .container-contact .contact-data .map iframe{
+        width: 550px;
+    }
+
+    .container-contact .contact-data .info {
+        /* position: relative;
+        bottom: 40%;
+        background-color: #252A2E;
+        padding: 1rem;  
+        width: fit-content;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10; */
+        text-align: center;
+        background-color: transparent;
+        color: white;
+        /* border: 2px solid white; */
+        width: 100%;
+        display: block;
+        padding: 0.5rem 0.9rem;
+        /* cursor: pointer; */
+        position: relative;
+    }
+
+    .container-contact .contact-data .info ul {
+        list-style: none;
+    }
+
+    .container-contact .contact-data .info ul li {
+        margin-bottom: 0.875rem;
     }
