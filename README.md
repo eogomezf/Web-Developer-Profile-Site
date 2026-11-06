@@ -24,7 +24,7 @@ Sitio estático **bilingüe (ES / EN)** con dos perfiles profesionales — **Sop
 ├─ docs/cv/              # CV en PDF (ES y EN) para descarga
 ├─ netlify.toml          # Configuración de Netlify (headers, caché)
 ├─ robots.txt            # Reglas para buscadores
-├─ sitemap.xml           # Sitemap (reemplazar DOMINIO antes de publicar)
+├─ sitemap.xml           # Sitemap (dominio de Netlify configurado)
 ├─ site.webmanifest      # PWA básica
 └─ README.md             # Este archivo
 ```
@@ -33,8 +33,8 @@ Sitio estático **bilingüe (ES / EN)** con dos perfiles profesionales — **Sop
 
 ## 2. Vista previa en local
 
-Las rutas son absolutas (`/css/styles.css`), así que hay que servir el sitio por
-HTTP (no sirve abrir el archivo con doble clic):
+Las rutas dentro de las páginas son relativas (`css/styles.css`), así que el sitio
+funciona tanto por HTTP como abierto con doble clic (`file://`):
 
 ```bash
 # Opción 1: Python (sin instalar nada)
@@ -55,10 +55,11 @@ Luego abre <http://localhost:8000> (y <http://localhost:8000/index.en.html> para
 2. Netlify detecta `netlify.toml`:
    - `publish = "."` (no hay build command, es HTML/CSS/JS estático).
    - Headers de seguridad, CSP y caché larga para `/img/*`.
-3. **Configura el dominio final** y actualiza:
-   - `robots.txt` → `Sitemap: https://TU-DOMINIO/sitemap.xml`
+3. **Dominio configurado** (`https://loquacious-vacherin-472391.netlify.app`) en:
+   - `robots.txt` → `Sitemap:`
    - `sitemap.xml` → los dos `<loc>`
-   - `index.html` y `index.en.html` → `<link rel="canonical">` y los `hreflang`
+   - `index.html` y `index.en.html` → `<link rel="canonical">`, `hreflang`,
+     `og:url`, `og:image` y `twitter:image` (URLs absolutas)
 4. Revisa en **Site settings → Forms** que aparezcan los formularios
    `contacto` (ES) y `contact` (EN). Netlify los detecta automáticamente desde
    `data-netlify="true"`.
@@ -128,8 +129,8 @@ Repite con `cv-es-desarrollo-web.html` → `docs/cv/CV-ES-Desarrollo-Web.pdf`.
 
 ## 6. PENDIENTE antes de publicar
 
-- [ ] Reemplazar `DOMINIO` en `robots.txt` y `sitemap.xml`.
-- [ ] Actualizar `canonical`, `hreflang` y `og:url` con el dominio real.
+- [x] Dominio de Netlify (`loquacious-vacherin-472391.netlify.app`) aplicado en
+      `robots.txt`, `sitemap.xml`, `canonical`, `hreflang`, `og:url` y `og:image`.
 - [x] Insignia oficial de AWS SAA: `img/cert-aws-saa.png` (descargada de Credly)
       con enlace personal de verificación
       `credly.com/earner/earned/badge/625f80b6-…`.

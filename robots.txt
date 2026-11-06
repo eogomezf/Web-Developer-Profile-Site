@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Reemplaza DOMINIO por el dominio final antes de publicar (ver README.md)
-Sitemap: https://DOMINIO/sitemap.xml
+Sitemap: https://loquacious-vacherin-472391.netlify.app/sitemap.xml
