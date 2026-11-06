@@ -1,0 +1,21 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Netlify
+.netlify/
+.cache/
+
+# Node (por si más adelante se añade tooling)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# PDFs generados / temporales
+*.tmp.pdf

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EG">
+  <rect width="64" height="64" rx="14" fill="#0b1220"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Montserrat, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#70cca6">EG</text>
+  <circle cx="32" cy="52" r="2.5" fill="#70cca6"/>
+</svg>

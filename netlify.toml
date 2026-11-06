@@ -1,0 +1,35 @@
+# Configuración de Netlify para el portafolio (sitio estático)
+
+[build]
+  publish = "."
+  command = ""
+
+# Sin framework: no hay comando de build
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'"
+
+# Imágenes: caché larga (los archivos se reemplazan por versión si cambian)
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# CV en PDF
+[[headers]]
+  for = "/docs/cv/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Páginas de error
+[[redirects]]
+  from = "/404"
+  to = "/404.html"
+  status = 404

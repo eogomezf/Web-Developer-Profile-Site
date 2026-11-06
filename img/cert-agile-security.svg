@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 112" role="img" aria-label="Agile Security">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16202f"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="196" height="108" rx="14" fill="url(#bg2)"/>
+  <rect x="2" y="2" width="196" height="108" rx="14" fill="none" stroke="#70cca6" stroke-width="3"/>
+  <path d="M100 22l24 9v20c0 17-10 29-24 34-14-5-24-17-24-34V31l24-9z" fill="none" stroke="#70cca6" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M89 54l8 8 15-16" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="96" text-anchor="middle" font-family="Montserrat, Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#ffffff">AGILE SECURITY</text>
+</svg>

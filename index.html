@@ -1,297 +1,1132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Elvis Gómez Floegel | Soporte TI & Cloud · Desarrollo Web</title>
+  <meta name="description" content="Portafolio de Elvis Gómez Floegel, Ingeniero Electrónico con más de 15 años en TI: soporte técnico enterprise, administración de sistemas, Azure y AWS, Active Directory/Entra ID, y desarrollo web full-stack con Angular, React, Node.js y .NET.">
+  <meta name="author" content="Elvis Gómez Floegel">
+  <meta name="keywords" content="soporte TI, IT support, sistemas, DevOps, Azure, AWS, Active Directory, Entra ID, administrador de sistemas, desarrollador web, Angular, React, Node.js, Netlify, Managua Nicaragua">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical y versiones de idioma (reemplaza "/" por el dominio final al publicar) -->
+  <link rel="canonical" href="/">
+  <link rel="alternate" hreflang="es" href="/">
+  <link rel="alternate" hreflang="en" href="/index.en.html">
+  <link rel="alternate" hreflang="x-default" href="/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Elvis Gómez Floegel">
+  <meta property="og:title" content="Elvis Gómez Floegel | Soporte TI & Cloud · Desarrollo Web">
+  <meta property="og:description" content="Más de 15 años en TI: soporte enterprise, administración de sistemas y cloud (Azure/AWS), IAM y desarrollo web full-stack.">
+  <meta property="og:image" content="/img/og-image.png">
+  <meta property="og:url" content="/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elvis Gómez Floegel | Soporte TI & Cloud · Desarrollo Web">
+  <meta name="twitter:description" content="Soporte enterprise, administración de sistemas y cloud, IAM y desarrollo web full-stack.">
+  <meta name="twitter:image" content="/img/og-image.png">
+
+  <!-- Iconos -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?  family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elvis Gómez Floegel",
+    "url": "/",
+    "image": "/img/Elvis.png",
+    "email": "mailto:elvis.gomez.f@hotmail.com",
+    "telephone": "+505-57232389",
+    "jobTitle": ["IT Support Engineer", "Systems Administrator", "Senior Web Developer", "Cloud Infrastructure Engineer"],
+    "description": "Ingeniero Electrónico con más de 15 años en tecnología de la información. Soporte técnico enterprise, administración de sistemas y cloud (Azure y AWS), gestión de identidad y acceso, automatización con PowerShell y Python, y desarrollo web full-stack.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Managua",
+      "addressCountry": "NI"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Nacional de Ingeniería (UNI)"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "BACCredomatic"
+    },
+    "knowsLanguage": ["es", "en"],
+    "knowsAbout": [
+      "IT Support", "Systems Administration", "Microsoft Azure", "AWS", "Active Directory",
+      "Microsoft Entra ID", "VMware", "Hyper-V", "PowerShell", "Python", "DevOps", "CI/CD",
+      "Angular", "React", "Next.js", "Node.js", "PHP", ".NET", "Firebase", "PostgreSQL", "Scrum"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/elvisgomezfloegel/",
+      "https://github.com/eogomezf"
+    ]
+  }
+  </script>
 </head>
+
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-    <div class="container-header">
-        <header id="index">
-            <!-- menu -->
-             <div class="logo">
-                 <a href="#index">ELVIS</a>
-             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#index">Inicio</a></li>
-                    <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>       
-        </header>
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Elvis Gómez Floegel — inicio">EG<span>.</span></a>
+
+      <nav class="main-nav" id="nav-principal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="lang-switch" href="index.en.html" hreflang="en" lang="en" aria-label="View this site in English / Ver este sitio en inglés">EN</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú de navegación">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    
+  </header>
 
-    <section id="hero" class="hero">
-        <div class="container-hero">
-            <div class="container-img">
-                <img src="https://i.ibb.co/Lh1JChqK/Elvis.png" alt="ELvis Gómez Floegel" />
-            </div>
-            <div class="container-name">
-                <h1>Elvis Gómez Floegel</h1>
-                <p><span>Ingeniero Electrónico </span>|<span> Administrador TI </span>|<span> Desarrollador Web </span></p>
-            </div>
+  <main id="contenido">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Managua, Nicaragua · Disponible para soporte remoto y proyectos</p>
+          <h1>Elvis Gómez Floegel</h1>
+          <p class="hero-lead">
+            Ingeniero Electrónico con más de 15 años en tecnología de la información. Administro sistemas
+            y clouds en producción, doy soporte a usuarios empresariales y construyo software full-stack.
+            Elige un perfil para ver cómo te puedo ayudar.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn--primary" href="#cv">Ver y descargar CV</a>
+            <a class="btn btn--ghost" href="#contacto">Hablemos</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/elvisgomezfloegel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn--ghost" href="https://github.com/eogomezf" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+
+          <div class="hero-meta">
+            <ul>
+              <li>Azure & AWS</li>
+              <li>Windows · Linux · IBM i</li>
+              <li>Active Directory / Entra ID</li>
+              <li>Angular · React · Node.js</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-
-    <section id="about" class="about">
-        <div class="container-about">
-             <div class="about-tech">
-                <h3>En lo laboral</h3>
-                <p>Ingeniero en Electrónica, desarrollador de software, administrador de servidores Windows, Linux, AIX e IBMi con más de 15 años de
-                    experiencia en el sector de tecnología de la información. 
-                </p>
-             </div>
-             <div class="about-img">
-                <img src="https://i.ibb.co/yn6nJqsm/about.jpg" alt="Acerca de mi" />
-             </div>
-             <div class="about-love">
-                <h3>En lo personal</h3>
-                <p>Soy Cristiano Evangélico, servidor de Jesús Cristo, amante de mi familia mi mas grande tesoro,
-                me gusta la música, ver series y ejercitarme.
-            </p>
-             </div>
-            
+        <div class="hero-photo">
+          <img src="img/Elvis.png" alt="Retrato de Elvis Gómez Floegel, ingeniero electrónico y administrador de sistemas" width="320" height="320" fetchpriority="high" decoding="async">
         </div>
-        
+      </div>
     </section>
 
-    <!-- habilidades -->
-    <section id="skills">
-        <h2>Habilidades obtenidas</h2>
-        <div class="container-skills">
-            <div class="skills">
-                <h3>Conocimientos</h3>
-                <ol>
-                    <li>
-                        <span class="sklills-main">Administración de servidores</span> <span class="sklills-detail">Windows, Linux, AIX e IBMi</span> 
-                    </li>
-                    <li>
-                        <span class="sklills-main"> Administración de Bases de Datos</span> <span class="sklills-detail"> Oracle, SQL Server, MySql, Firebase</span> 
-                    </li>
-                    <li>
-                        <span class="sklills-main">Administración ambientes </span><span class="sklills-detail">Desarrollo y Pruebas</span> 
-                    </li>
-                    <li>
-                        <span class="sklills-main">Desarrollo de aplicaciones</span><span class="sklills-detail">Web a la medida</span>
-                    </li>
-                    <li>
-                        <span class="sklills-main">Metodologías ágiles.</span><span class="sklills-detail">Scrum</span>
-                    </li>
-                    <li>
-                        <span class="sklills-main"> DevOps</span><span class="sklills-detail">Azure DevOps, CI/CD</span>
-                    </li>
-                </ol>
+    <!-- ==================== SELECTOR DE PERFIL ==================== -->
+    <div class="profile-switcher">
+      <div class="profile-switcher-inner" role="tablist" aria-label="Perfil profesional">
+        <button class="tab" type="button" role="tab" id="tab-ti" aria-controls="panel-ti" aria-selected="true" data-tab="ti">Soporte TI & Cloud</button>
+        <button class="tab" type="button" role="tab" id="tab-dev" aria-controls="panel-dev" aria-selected="false" data-tab="dev" tabindex="-1">Desarrollo Web & Cloud</button>
+      </div>
+    </div>
+
+    <!-- ========================= ACERCA DE ========================= -->
+    <section id="acerca" class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Quién soy</p>
+          <h2>Acerca de mí</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="img/about.jpg" alt="Equipo de trabajo revisando documentación técnica alrededor de una mesa" loading="lazy" decoding="async" width="768" height="512">
+          </div>
+
+          <div class="about-copy">
+            <div class="panel" data-panel="ti" role="tabpanel" id="panel-ti-about" aria-labelledby="tab-ti">
+              <p>
+                Soy <strong>Administrador de Sistemas y soporte TI</strong> con más de 15 años de experiencia
+                atendiendo usuarios empresariales, infraestructura, entornos en la nube, aplicaciones de
+                negocio y sistemas en producción. Mi trabajo no termina en “reiniciar el equipo”:
+                diagnostico, escalo cuando corresponde, resuelvo, y cierro con el análisis de causa raíz
+                y la acción correctiva que evita que el problema regrese.
+              </p>
+              <p>
+                Me siento cómodo trabajando tanto con personal técnico como con usuarios no técnicos:
+                Active Directory, Microsoft Entra ID, Windows Server, Azure, AWS, DNS/DHCP, virtualización,
+                PowerShell y Python son parte de mi día a día. Disfruto especialmente la <strong>gestión de
+                incidentes, la automatización de tareas repetitivas y la mejora continua</strong> de la operación.
+              </p>
             </div>
-            <div class="certifications">
-                <h3>Certificaciones</h3>
-                <div class="container-certs">
-                    <div class="cert">
-                        <a target="_blank" href="https://www.credly.com/badges/a7129e3e-0d98-45d1-8614-f3f80562108d?source=linked_in_profile">
-                            <img src="https://i.ibb.co/dJ2HZKZc/az900.png" alt="AZ-900" >
-                            <p>Microsoft Azure Fundamentals.</p>
-                        </a>
-                    </div>
-                    <div class="cert">
-                        <a target="_blank" href="https://www.credly.com/badges/c923ae9e-554a-4389-8412-6a2b8e352f42">
-                            <img src="https://i.ibb.co/WptcLQFw/ai900.png" alt="AI-900">
-                            <p>Microsoft Azure AI Fundamentals.</p>
-                        </a>
-                    </div>
-                    <div class="cert">
-                        <a target="_blank" href="https://learn.microsoft.com/es-mx/users/elvisgomezfloegel-1023/credentials/ca2dd6e22f46a89c">
-                            <img src="https://i.ibb.co/60gVX3rS/az104.png" alt="AZ-104">
-                            <p>Microsoft Azure Administrador Asociado.</p>     
-                        </a>
-                      
-                    </div>
-                    <div class="cert">
-                        <a target="_blank" href="https://www.credly.com/badges/e44c7de1-3171-4008-a7e4-c83df231271d/linked_in_profile">
-                            <img src="https://i.ibb.co/CKnNh4L3/awscp.png" alt="AWS-CCP">
-                            <p>AWS Certified Cloud Practitioner.</p>     
-                        </a>
-                        
-                    </div>
-                    <div class="cert">
-                        <a target="_blank" href="https://www.credly.com/badges/383b7bf7-59bc-4227-835e-c8db965072f8">
-                            <img src="https://i.ibb.co/kg1NmCNR/sfpc.png" alt="SFPC">
-                            <p> Scrum Foundation Professional Certification - SFPC™.</p>     
-                        </a>
-                      
-                    </div>
-                    <div class="cert">
-                        <a target="_blank" href="https://www.credly.com/badges/f9ff79b8-9967-4e79-81bd-d2eeb1d23d22">
-                            <img src="https://i.ibb.co/XZDwbPgM/osfc.png" alt="OSFC">
-                            <p> Official Scrum Fundamentals Certification.</p>     
-                        </a>
-                        
-                    </div>
-                    <div class="cert">
-                        <a target="_blank" href="https://www.acreditta.com/credential/1d105d0e-0828-49a4-919c-3650d8af3e69">
-                            <img src="https://i.ibb.co/3Ym9X71R/ti639.webp" alt="TI-639">
-                            <p> Administración de Docker.</p>     
-                        </a>
-                       
-                    </div>
-                    <div class="cert">
-                        <a target="_blank" href="https://badgelist.com/gestion-analisis-informacion/gac-001/u/ElvisGomez">
-                            <img src="https://i.ibb.co/S4Vj4wHz/gac001.png" alt="GAC-001">
-                            <p> Oracle Data Base 12c.</p>     
-                        </a>
-                       
-                    </div>
-                </div>
-                
-    
-            </div> 
-        </div>             
-    
+
+            <div class="panel" data-panel="dev" role="tabpanel" id="panel-dev-about" aria-labelledby="tab-dev">
+              <p>
+                Soy <strong>Desarrollador Full-Stack senior</strong> e Ingeniero Electrónico. Construyo
+                soluciones web escalables con Angular, React y Next.js, sobre arquitecturas backend en
+                Node.js, PHP y .NET, con base de datos en PostgreSQL, MySQL, SQL Server, MongoDB y Firebase.
+              </p>
+              <p>
+                Además de escribir código, me encargo de la <strong>infraestructura que lo sostiene</strong>:
+                entornos Linux y Windows Server, virtualización, pipelines de CI/CD con Jenkins, Azure DevOps
+                y SonarQube, y automatización con Ansible. Lidero equipos ágiles bajo Scrum y me gusta que
+                los productos que entregamos se puedan medir en la operación real.
+              </p>
+            </div>
+
+            <div class="personal">
+              <strong>En lo personal:</strong> soy cristiano evangélico y servidor de Jesús Cristo;
+              soy amante de mi familia, mi mayor tesoro. Me gusta la música, ver series y ejercitarme.
+              Valoro el trabajo en equipo y la comunicación clara, porque la tecnología solo funciona
+              cuando las personas se entienden.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Proyectos -->
-    <section id="projects" class="projects">
-        <h2>Proyectos Destacados</h2>
-        <article class="project-right">
-            <div class="project-img">
-                 <img src="https://i.ibb.co/rfKqTrng/ipaywater.jpg" alt="I pay Water">
-            </div>
-            <div class="project-detail">
-                <div class="detail-title">
-                    <h3>I Pay Water</h3>
-                    <p>Sistema para el Control de Consumo de Agua.</p>
-                </div>
-                <div class="detail-list">
-                    <ul>
-                        <li>Angular</li>
-                        <li>Firebase</li>
-                        <li>SupaBase</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-              
-            </div>            
-        </article>
+    <!-- ========================== SERVICIOS ========================= -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cómo te puedo ayudar</p>
+          <h2>Servicios</h2>
+          <p>Elige el perfil y revisa los servicios, la experiencia y las habilidades de esa especialidad.</p>
+        </div>
 
-        <article class="project-left">
-            <div class="project-img">
-                 <img src="https://i.ibb.co/PZ15wsz7/yellow7.jpg" alt="Yellow-7">
-            </div>
-            <div class="project-detail">
-                <div class="detail-title">
-                    <h3>Yellow-7</h3>
-                    <p>Plataforma de Servicios Profesionales.</p>
-                </div>
-                <div class="detail-list">
-                    <ul>
-                        <li>Angular</li>
-                        <li>Firebase</li>
-                        <li>PHP</li>
-                        <li>JQUERY</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>              
-            </div>            
-        </article>
+        <div class="panel" data-panel="ti" role="tabpanel" id="panel-ti-servicios" aria-labelledby="tab-ti">
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </div>
+              <h3>Soporte técnico enterprise</h3>
+              <p>Atención de incidentes y consultas de usuarios finales en Windows, entornos SaaS, aplicaciones de negocio y conectividad. Diagnóstico, escalamiento y resolución con seguimiento hasta el cierre.</p>
+            </article>
 
-        <article  class="project-right">
-            <div class="project-img">
-              <img src="https://i.ibb.co/84LSkRph/csp.png" alt="Casita San Payo">
-            </div>
-            <div class="project-detail">
-                <div class="detail-title">
-                     <h3>Casita San Payo</h3>
-                    <p>Sistema para el Control de Reservas de Hotel.</p>
-                </div>
-                <div class="detail-list">
-                    <ul>
-                        <li>Angular JS</li>
-                        <li>PHP</li>
-                        <li>MYSQL</li>
-                        <li>JQUERY</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-              
-            </div>            
-        </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
+              </div>
+              <h3>Administración de sistemas</h3>
+              <p>Windows Server, Linux, Active Directory, Group Policy, DNS/DHCP, patching, actualizaciones, monitoreo, backups y disaster recovery en entornos híbridos y de producción.</p>
+            </article>
 
-        <article class="project-left">
-            <div class="project-img">
-                <img src="https://i.ibb.co/cSXvnpXn/sirt.jpg" alt="SIRT-MEPUN">
-            </div>
-            <div class="project-detail">
-                <div class="detail-title">
-                    <h3>SIRT-MEPUN</h3>
-                    <p>Sistema de Inventario para Recursos Teológicos.</p>
-                </div>
-                <div class="detail-list">
-                    <ul>
-                        <li>PHP</li>
-                        <li>MYSQL</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                
-            </div>            
-        </article>
-    
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.8-8 10-4.6-1.2-8-5-8-10V6l8-4z"/><circle cx="12" cy="10" r="2.5"/><path d="M6.5 17c1.3-1.6 3.2-2.4 5.5-2.4s4.2.8 5.5 2.4"/></svg>
+              </div>
+              <h3>Identidad y acceso (IAM)</h3>
+              <p>Microsoft Entra ID / Azure AD, administración de usuarios y grupos, permisos, autenticación y MFA, políticas de acceso y ciclo de vida de las cuentas.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 18a4.5 4.5 0 0 1-.5-8.97A6.5 6.5 0 0 1 18.7 10.2 4 4 0 0 1 18 18H6.5z"/><path d="M12 12v6M9.5 14.5L12 12l2.5 2.5"/></svg>
+              </div>
+              <h3>Cloud y automatización</h3>
+              <p>Azure y AWS: gestión de recursos, soporte de aplicaciones SaaS, automatización de tareas repetitivas con PowerShell y Python, runbooks y mejora continua de la operación.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>
+              </div>
+              <h3>Incidentes y documentación</h3>
+              <p>Análisis de causa raíz, procedimientos de troubleshooting, base de conocimiento y documentación técnica para que el equipo resuelva más rápido la próxima vez.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+              </div>
+              <h3>Soporte cloud y SaaS</h3>
+              <p>Diagnóstico de aplicaciones en la nube (Firebase, Firestore, Cloud Functions), flujos de datos, notificaciones y mantenimiento de aplicaciones de negocio en producción.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="dev" role="tabpanel" id="panel-dev-servicios" aria-labelledby="tab-dev">
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></svg>
+              </div>
+              <h3>Frontend</h3>
+              <p>Angular, React, Next.js, TypeScript y JavaScript moderno. Interfaces accesibles, responsivas y pensadas para escalar en componentes y en tamaño del equipo.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+              </div>
+              <h3>Backend y APIs</h3>
+              <p>Node.js y Express, PHP con Laravel y Symfony, .NET MVC en C#, APIs REST y GraphQL, autenticación segura con JWT/OAuth y arquitectura MVC.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+              </div>
+              <h3>Bases de datos</h3>
+              <p>PostgreSQL, MySQL, SQL Server, MongoDB y Firebase (Firestore/Realtime): modelado, optimización de consultas, migraciones e índices.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="2.5"/></svg>
+              </div>
+              <h3>Cloud, CI/CD y automatización</h3>
+              <p>AWS y Azure, Jenkins, Azure DevOps, SonarQube, Ansible y Git: pipelines automatizados, calidad de código y despliegue predecible entre entornos.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
+              </div>
+              <h3>Entornos e infraestructura</h3>
+              <p>Arquitectura y gestión de servidores Linux (RedHat) y Windows Server, virtualización, entornos de desarrollo y staging, monitoreo y respaldo.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11h5M18.5 8.5v5"/></svg>
+              </div>
+              <h3>Mentoría y formación</h3>
+              <p>Programa de mentoría en desarrollo web (CodeCrafters Labs, 2025): formación intensiva en React, Next.js, Node.js, GraphQL y bases de datos.</p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contact" class="container-contact">
-        <h2>Contacto</h2>
-        <p>Contactenos, sera un placer atenderles</p>
-        <div class="contact-data">
-       
-            <form class="contact">
-                <input type="text" placeholder="Tu Nombre">
-                <input type="tel" placeholder="Número de Teléfono">
-                <input type="email" placeholder="Dirección de Correo">
-                
-                <textarea cols="30" rows="7" placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar Mensaje</button>
+    <!-- ========================= EXPERIENCIA ========================= -->
+    <section id="experiencia" class="section section--light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Trayectoria</p>
+          <h2>Experiencia profesional</h2>
+        </div>
+
+        <div class="panel" data-panel="ti" role="tabpanel" id="panel-ti-experiencia" aria-labelledby="tab-ti">
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-date">2019 — Actualidad</span>
+              <h3>Administrador de Sistemas Senior</h3>
+              <p class="timeline-role">BACCredomatic · Managua, Nicaragua</p>
+              <ul>
+                <li>Soporte técnico a usuarios empresariales, sistemas, infraestructura y servicios críticos del negocio.</li>
+                <li>Diagnóstico y resolución de incidentes complejos en entornos Windows, accesos de usuario, redes, aplicaciones, servidores y cloud.</li>
+                <li>Administración de Active Directory, cuentas de usuario, grupos, Group Policy, DNS, DHCP y permisos de acceso.</li>
+                <li>Soporte de identidad y acceso en entornos empresariales, incluyendo Microsoft Entra ID / Azure AD.</li>
+                <li>Gestión y soporte de recursos de Microsoft Azure e infraestructura en la nube.</li>
+                <li>Soporte a VMware y Hyper-V; patching, actualizaciones, monitoreo, backups y disaster recovery.</li>
+                <li>Colaboración con equipos de ingeniería, aplicaciones e infraestructura en incidentes de producción.</li>
+                <li>Creación de documentación técnica, runbooks, procedimientos de troubleshooting y base de conocimiento.</li>
+                <li>Automatización de tareas administrativas y de soporte con PowerShell y Python.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2023 — Actualidad</span>
+              <h3>Soporte de aplicaciones en la nube — iPayWater</h3>
+              <p class="timeline-role">Angular · Firebase · Cloud Functions · Firestore</p>
+              <ul>
+                <li>Soporte en producción, troubleshooting, resolución de incidencias, reportes y notificaciones.</li>
+                <li>Trabajo con Firebase, Firestore, Cloud Functions y servicios de aplicación en un entorno cloud.</li>
+                <li>Investigación de problemas de la aplicación y despliegue de soluciones correctivas.</li>
+                <li>Mejora continua de la aplicación mediante automatización y ajustes técnicos.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2019</span>
+              <h3>Desarrollador Web</h3>
+              <p class="timeline-role">Cubas Eléctricas · Febrero — Junio 2019</p>
+              <ul>
+                <li>Desarrollo de aplicaciones web con PHP (Symfony) y Angular.</li>
+                <li>Gestión y optimización de bases de datos relacionales en PostgreSQL.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2018</span>
+              <h3>Desarrollador</h3>
+              <p class="timeline-role">Casita San Payo y SIRT-MEPUN</p>
+              <ul>
+                <li>Desarrollo y mantenimiento de sistemas web de reservas de hotel (Casita San Payo) e inventario de recursos (SIRT-MEPUN).</li>
+                <li>Implementación de funcionalidades, corrección de errores y soporte a los usuarios finales de las aplicaciones.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2017</span>
+              <h3>Desarrollador de Aplicaciones Web</h3>
+              <p class="timeline-role">Inifom · Enero — Diciembre 2017</p>
+              <ul>
+                <li>Construcción del sistema de ventanilla única (“Single Window”) con .NET MVC en C# y AngularJS.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <div class="panel" data-panel="dev" role="tabpanel" id="panel-dev-experiencia" aria-labelledby="tab-dev">
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-date">2019 — Actualidad</span>
+              <h3>Dev & Staging Environment Manager · Full-Stack</h3>
+              <p class="timeline-role">BACCredomatic · Managua, Nicaragua</p>
+              <ul>
+                <li>Arquitectura y gestión de entornos web sobre Linux (RedHat) y Windows Server.</li>
+                <li>Desarrollo de un sistema propio de inventario de servidores y gestión de tareas en PHP y MySQL.</li>
+                <li>Liderazgo de la automatización de CI/CD con Jenkins, Azure DevOps y SonarQube.</li>
+                <li>Coordinación de despliegues entre entornos de desarrollo, pruebas y producción.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">Julio 2025</span>
+              <h3>Mentoría en Desarrollo Web</h3>
+              <p class="timeline-role">CodeCrafters Labs</p>
+              <ul>
+                <li>Formación intensiva en React y Next.js para soluciones frontend de alto rendimiento.</li>
+                <li>Desarrollo de servicios escalables con Node.js, Express y GraphQL.</li>
+                <li>Implementación avanzada de MongoDB y PostgreSQL.</li>
+                <li>Fundamentos de ingeniería: APIs REST, arquitectura MVC y autenticación segura con JWT/OAuth.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2023 — Actualidad</span>
+              <h3>Full-Stack Developer — iPayWater</h3>
+              <p class="timeline-role">Angular 17 · Firebase · Cloud Functions · FCM</p>
+              <ul>
+                <li>Desarrollo de la plataforma de control de consumo de agua en Angular 17 y Firebase.</li>
+                <li>Implementación de lógica serverless con Firebase Functions y notificaciones en tiempo real con FCM.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2019</span>
+              <h3>Web Developer</h3>
+              <p class="timeline-role">Cubas Eléctricas · Febrero — Junio 2019</p>
+              <ul>
+                <li>Desarrollo de aplicaciones web con PHP (Symfony) y Angular.</li>
+                <li>Gestión y optimización de bases de datos relacionales en PostgreSQL.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2018</span>
+              <h3>Desarrollador</h3>
+              <p class="timeline-role">Casita San Payo y SIRT-MEPUN</p>
+              <ul>
+                <li>Desarrollo de los sistemas web de reservas de hotel (Casita San Payo) y de inventario de recursos teológicos (SIRT-MEPUN).</li>
+                <li>Desarrollo de funcionalidades, integración de base de datos MySQL y soporte a usuarios finales.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2017</span>
+              <h3>Web App Developer</h3>
+              <p class="timeline-role">Inifom · Enero — Diciembre 2017</p>
+              <ul>
+                <li>Construcción del sistema “Single Window” con .NET MVC en C# y AngularJS.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= HABILIDADES ========================= -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Stack y competencias</p>
+          <h2>Habilidades</h2>
+        </div>
+
+        <div class="panel" data-panel="ti" role="tabpanel" id="panel-ti-habilidades" aria-labelledby="tab-ti">
+          <div class="skill-groups">
+            <article class="skill-group">
+              <h3>Soporte y resolución de incidentes</h3>
+              <ul class="chips">
+                <li>Soporte a usuario final</li>
+                <li>Incident management</li>
+                <li>Análisis de causa raíz</li>
+                <li>Troubleshooting de aplicaciones</li>
+                <li>Troubleshooting de conectividad</li>
+                <li>Soporte remoto</li>
+                <li>Soporte en producción</li>
+                <li>Escalamiento</li>
+                <li>Documentación y base de conocimiento</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Identidad y acceso</h3>
+              <ul class="chips">
+                <li>Active Directory</li>
+                <li>Microsoft Entra ID / Azure AD</li>
+                <li>Usuarios y grupos</li>
+                <li>Permisos de acceso</li>
+                <li>Group Policy</li>
+                <li>Autenticación y MFA</li>
+                <li>Ciclo de vida de usuarios</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Nube y SaaS</h3>
+              <ul class="chips">
+                <li>Microsoft Azure</li>
+                <li>Amazon Web Services</li>
+                <li>AWS IAM</li>
+                <li>Aplicaciones SaaS</li>
+                <li>Firebase / Firestore</li>
+                <li>Cloud Functions</li>
+                <li>VMware</li>
+                <li>Hyper-V</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Sistemas y redes</h3>
+              <ul class="chips">
+                <li>Windows Server</li>
+                <li>Windows</li>
+                <li>Linux</li>
+                <li>AIX / IBM i</li>
+                <li>DNS</li>
+                <li>DHCP</li>
+                <li>TCP/IP</li>
+                <li>Backup y disaster recovery</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Automatización y scripting</h3>
+              <ul class="chips">
+                <li>PowerShell</li>
+                <li>Python</li>
+                <li>Bash</li>
+                <li>REST APIs</li>
+                <li>Automatización de procesos</li>
+                <li>Monitoreo</li>
+                <li>Runbooks</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Prácticas de trabajo</h3>
+              <ul class="chips">
+                <li>Scrum</li>
+                <li>DevOps</li>
+                <li>CI/CD</li>
+                <li>Azure DevOps</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="dev" role="tabpanel" id="panel-dev-habilidades" aria-labelledby="tab-dev">
+          <div class="skill-groups">
+            <article class="skill-group">
+              <h3>Frontend</h3>
+              <ul class="chips">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Angular 12–17</li>
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>jQuery</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Backend y APIs</h3>
+              <ul class="chips">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PHP (Laravel, Symfony)</li>
+                <li>.NET MVC (C#)</li>
+                <li>GraphQL</li>
+                <li>REST APIs</li>
+                <li>JWT / OAuth</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Bases de datos</h3>
+              <ul class="chips">
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>SQL Server</li>
+                <li>Oracle 12c</li>
+                <li>MongoDB</li>
+                <li>Firebase (Firestore / Realtime)</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Cloud y DevOps</h3>
+              <ul class="chips">
+                <li>AWS (Solutions Architect)</li>
+                <li>Microsoft Azure</li>
+                <li>Jenkins</li>
+                <li>Azure DevOps</li>
+                <li>SonarQube</li>
+                <li>Ansible</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Git / GitHub</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Infraestructura</h3>
+              <ul class="chips">
+                <li>Linux (RedHat)</li>
+                <li>Windows Server</li>
+                <li>VMware</li>
+                <li>Hyper-V</li>
+                <li>Entornos Dev / Staging</li>
+                <li>Monitoreo y respaldos</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3>Metodologías y prácticas</h3>
+              <ul class="chips">
+                <li>Scrum (certificado)</li>
+                <li>Arquitectura MVC</li>
+                <li>Pruebas unitarias</li>
+                <li>CI/CD</li>
+                <li>Mentoría técnica</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CERTIFICACIONES ====================== -->
+    <section id="certificaciones" class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Credenciales verificables</p>
+          <h2>Certificaciones</h2>
+          <p>Cada insignia enlaza a la página oficial de verificación de la credencial.</p>
+        </div>
+
+        <div class="cert-grid">
+          <a class="cert" href="https://www.credly.com/earner/earned/badge/625f80b6-f935-4caf-9395-c5f337ea832b" target="_blank" rel="noopener noreferrer">
+            <img src="img/cert-aws-saa.png" alt="Insignia oficial de AWS Certified Solutions Architect Associate" width="600" height="600" loading="lazy" decoding="async">
+            <span>AWS Certified Solutions Architect – Associate</span>
+            <small>Amazon Web Services · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://learn.microsoft.com/es-mx/users/elvisgomezfloegel-1023/credentials/ca2dd6e22f46a89c" target="_blank" rel="noopener noreferrer">
+            <img src="img/az104.png" alt="Insignia de Microsoft Certified Azure Administrator Associate" width="160" height="90" loading="lazy" decoding="async">
+            <span>Microsoft Certified: Azure Administrator Associate</span>
+            <small>Microsoft · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://www.credly.com/badges/e44c7de1-3171-4008-a7e4-c83df231271d/linked_in_profile" target="_blank" rel="noopener noreferrer">
+            <img src="img/awscp.png" alt="Insignia de AWS Certified Cloud Practitioner" width="160" height="90" loading="lazy" decoding="async">
+            <span>AWS Certified Cloud Practitioner</span>
+            <small>Amazon Web Services · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://www.credly.com/badges/c923ae9e-554a-4389-8412-6a2b8e352f42" target="_blank" rel="noopener noreferrer">
+            <img src="img/ai900.png" alt="Insignia de Microsoft Azure AI Fundamentals" width="160" height="90" loading="lazy" decoding="async">
+            <span>Microsoft Azure AI Fundamentals</span>
+            <small>Microsoft · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://www.credly.com/badges/a7129e3e-0d98-45d1-8614-f3f80562108d?source=linked_in_profile" target="_blank" rel="noopener noreferrer">
+            <img src="img/az900.png" alt="Insignia de Microsoft Azure Fundamentals" width="160" height="90" loading="lazy" decoding="async">
+            <span>Microsoft Azure Fundamentals</span>
+            <small>Microsoft · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://www.credly.com/badges/383b7bf7-59bc-4227-835e-c8db965072f8" target="_blank" rel="noopener noreferrer">
+            <img src="img/sfpc.png" alt="Insignia de Scrum Foundation Professional Certification" width="160" height="90" loading="lazy" decoding="async">
+            <span>Scrum Foundation Professional Certification (SFPC™)</span>
+            <small>Scrum.org · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://www.credly.com/badges/f9ff79b8-9967-4e79-81bd-d2eeb1d23d22" target="_blank" rel="noopener noreferrer">
+            <img src="img/osfc.png" alt="Insignia de Official Scrum Fundamentals Certification" width="160" height="90" loading="lazy" decoding="async">
+            <span>Official Scrum Fundamentals Certification (OSFC™)</span>
+            <small>Scrum.org · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://www.acreditta.com/credential/1d105d0e-0828-49a4-919c-3650d8af3e69" target="_blank" rel="noopener noreferrer">
+            <img src="img/ti639.png" alt="Insignia de Administración de Docker" width="160" height="90" loading="lazy" decoding="async">
+            <span>Administración de Docker</span>
+            <small>Acreditta · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://badgelist.com/gestion-analisis-informacion/gac-001/u/ElvisGomez" target="_blank" rel="noopener noreferrer">
+            <img src="img/gac001.png" alt="Insignia de Oracle Database 12c" width="160" height="90" loading="lazy" decoding="async">
+            <span>Oracle Database 12c (GAC-001)</span>
+            <small>Oracle · Verificar</small>
+          </a>
+
+          <a class="cert" href="https://www.linkedin.com/in/elvisgomezfloegel/" target="_blank" rel="noopener noreferrer">
+            <img src="img/cert-agile-security.svg" alt="Insignia de Agile Security" width="160" height="90" loading="lazy" decoding="async">
+            <span>Agile Security</span>
+            <small>Verificar en LinkedIn</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== PROYECTOS ========================= -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Portafolio de soluciones</p>
+          <h2>Proyectos destacados</h2>
+        </div>
+
+        <div class="panel" data-panel="ti" role="tabpanel" id="panel-ti-proyectos" aria-labelledby="tab-ti">
+          <div class="project-list">
+            <article class="project">
+              <div class="project-media">
+                <img src="img/ipaywater.jpg" alt="Interfaz del sistema iPayWater para el control de consumo de agua" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>iPayWater</h3>
+                <p class="project-desc">Sistema web para el control del consumo de agua. En este perfil, mi rol es el de soporte y operación de la plataforma en producción: troubleshooting, reportes, notificaciones y correcciones directas.</p>
+                <ul class="project-tags">
+                  <li>Angular</li><li>Firebase</li><li>Cloud Functions</li><li>Firestore</li>
+                </ul>
+                <p><a class="link-arrow" href="https://www.ipaywater.com" target="_blank" rel="noopener noreferrer">Ver proyecto en vivo</a></p>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media">
+                <img src="img/yellow7.jpg" alt="Interfaz de la plataforma de servicios profesionales Yellow7" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>Yellow7</h3>
+                <p class="project-desc">Plataforma de servicios profesionales. Mantenimiento y soporte en producción: investigación de errores, resolución de incidencias y mejoras continuas de la aplicación.</p>
+                <ul class="project-tags">
+                  <li>Angular</li><li>PHP</li><li>Firebase</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media">
+                <img src="img/csp.png" alt="Pantalla del sistema web de reservas del hotel Casita San Payo" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>Casita San Payo</h3>
+                <p class="project-desc">Sistema web de control de reservas de hotel. Desarrollador (2018): construcción de funcionalidades, integración de base de datos y soporte a los usuarios finales.</p>
+                <ul class="project-tags">
+                  <li>PHP</li><li>MySQL</li><li>jQuery</li><li>HTML</li><li>CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media">
+                <img src="img/sirt.jpg" alt="Pantalla del sistema de inventario de recursos teológicos SIRT-MEPUN" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>SIRT-MEPUN</h3>
+                <p class="project-desc">Sistema de inventario para recursos teológicos. Desarrollador (2018): implementación del sistema, control de acceso a datos y correcciones sobre los registros de inventario.</p>
+                <ul class="project-tags">
+                  <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media project-media--placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
+              </div>
+              <div>
+                <h3>Inventario de servidores y tareas</h3>
+                <p class="project-desc">Herramienta interna para registrar servidores y dar seguimiento a las tareas de operación. Incluye la operación diaria del servicio y la generación de reportes para el equipo.</p>
+                <ul class="project-tags">
+                  <li>PHP</li><li>MySQL</li><li>Linux</li><li>Windows Server</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="dev" role="tabpanel" id="panel-dev-proyectos" aria-labelledby="tab-dev">
+          <div class="project-list">
+            <article class="project">
+              <div class="project-media">
+                <img src="img/ipaywater.jpg" alt="Interfaz del sistema iPayWater para el control de consumo de agua" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>iPayWater</h3>
+                <p class="project-desc">Plataforma de control de consumo de agua que desarrollé con Angular 17 y Firebase: lógica serverless con Cloud Functions y notificaciones en tiempo real con FCM.</p>
+                <ul class="project-tags">
+                  <li>Angular 17</li><li>Firebase</li><li>Cloud Functions</li><li>FCM</li>
+                </ul>
+                <p><a class="link-arrow" href="https://www.ipaywater.com" target="_blank" rel="noopener noreferrer">Ver proyecto en vivo</a></p>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media project-media--placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
+              </div>
+              <div>
+                <h3>Inventario de servidores y tareas</h3>
+                <p class="project-desc">Sistema propio de inventario y gestión de tareas que desarrollé en PHP y MySQL para la operación de entornos web en Linux (RedHat) y Windows Server.</p>
+                <ul class="project-tags">
+                  <li>PHP</li><li>MySQL</li><li>Linux</li><li>Windows Server</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media project-media--placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h10"/><circle cx="18" cy="17" r="2.5"/></svg>
+              </div>
+              <div>
+                <h3>Single Window — Inifom</h3>
+                <p class="project-desc">Sistema de ventanilla única (“Single Window”) construido con .NET MVC en C# y AngularJS, para centralizar trámites y reducir la fricción operativa de la institución.</p>
+                <ul class="project-tags">
+                  <li>.NET MVC (C#)</li><li>AngularJS</li><li>JavaScript</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media">
+                <img src="img/yellow7.jpg" alt="Interfaz de la plataforma de servicios profesionales Yellow7" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>Yellow7</h3>
+                <p class="project-desc">Plataforma de servicios profesionales desarrollada con Angular, PHP y Firebase, con mejoras continuas sobre la operación y la experiencia de usuario.</p>
+                <ul class="project-tags">
+                  <li>Angular</li><li>PHP</li><li>Firebase</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media">
+                <img src="img/csp.png" alt="Pantalla del sistema web de reservas del hotel Casita San Payo" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>Casita San Payo</h3>
+                <p class="project-desc">Sistema web de control de reservas de hotel. Desarrollador (2018): funcionalidades de reserva, integración de base de datos y soporte a los usuarios finales.</p>
+                <ul class="project-tags">
+                  <li>PHP</li><li>MySQL</li><li>jQuery</li><li>HTML</li><li>CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-media">
+                <img src="img/sirt.jpg" alt="Pantalla del sistema de inventario de recursos teológicos SIRT-MEPUN" loading="lazy" decoding="async" width="800" height="500">
+              </div>
+              <div>
+                <h3>SIRT-MEPUN</h3>
+                <p class="project-desc">Sistema de inventario para recursos teológicos. Desarrollador (2018): implementación del sistema, control de acceso a datos y correcciones sobre los registros.</p>
+                <ul class="project-tags">
+                  <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCACIÓN / IDIOMAS / CV ==================== -->
+    <section id="cv" class="section section--light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Formación y credenciales</p>
+          <h2>Educación, idiomas y CV</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Educación</h3>
+            <ul>
+              <li><strong>Ingeniero Electrónico</strong> — Universidad Nacional de Ingeniería (UNI), Nicaragua</li>
+              <li>Mentoría en Desarrollo Web — CodeCrafters Labs (2025)</li>
+              <li>Certificaciones en cloud, Scrum y bases de datos (ver sección de certificaciones)</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3>Idiomas</h3>
+            <ul>
+              <li><strong>Español</strong> — Nativo</li>
+              <li><strong>Inglés</strong> — Competencia profesional (Working Proficiency)</li>
+              <li>Redactado y documentado en ambos idiomas para equipos y clientes globales</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3>Cómo trabajamos</h3>
+            <ul>
+              <li>Metodologías ágiles bajo <strong>Scrum</strong> (certificado)</li>
+              <li>Pipelines de <strong>CI/CD</strong> y control de calidad con SonarQube</li>
+              <li>Documentación de runbooks y procedimientos para operación autonomous</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="panel" data-panel="ti" role="tabpanel" id="panel-ti-cv" aria-labelledby="tab-ti" style="margin-top:2rem;">
+          <h3 style="text-align:center;">Descarga mi CV — Soporte TI & Cloud</h3>
+          <div class="cv-downloads">
+            <a class="cv-file" href="docs/cv/CV-ES-Soporte-TI.pdf" download>
+              <span class="cv-file-icon" aria-hidden="true">PDF</span>
+              <span>
+                <strong>CV en español</strong>
+                <small>IT Support Engineer · SaaS & Cloud Support</small>
+              </span>
+            </a>
+            <a class="cv-file" href="docs/cv/CV-EN-IT-Support-Engineer.pdf" download>
+              <span class="cv-file-icon" aria-hidden="true">PDF</span>
+              <span>
+                <strong>CV in English</strong>
+                <small>IT Support Engineer · SaaS & Cloud Support</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="dev" role="tabpanel" id="panel-dev-cv" aria-labelledby="tab-dev" style="margin-top:2rem;">
+          <h3 style="text-align:center;">Descarga mi CV — Desarrollo Web & Cloud</h3>
+          <div class="cv-downloads">
+            <a class="cv-file" href="docs/cv/CV-ES-Desarrollo-Web.pdf" download>
+              <span class="cv-file-icon" aria-hidden="true">PDF</span>
+              <span>
+                <strong>CV en español</strong>
+                <small>Senior Web Developer · Cloud Infrastructure</small>
+              </span>
+            </a>
+            <a class="cv-file" href="docs/cv/CV-EN-Web-Developer.pdf" download>
+              <span class="cv-file-icon" aria-hidden="true">PDF</span>
+              <span>
+                <strong>CV in English</strong>
+                <small>Senior Web Developer · Cloud Infrastructure</small>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== CONTACTO ========================== -->
+    <section id="contacto" class="section section--dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Hablemos</p>
+          <h2>Contacto</h2>
+          <p>Cuéntame qué necesitas y te propongo el siguiente paso. Respondo en menos de 24 horas hábiles.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="form-card">
+            <p class="availability">Disponible para soporte remoto y proyectos</p>
+
+            <form name="contacto" method="POST" action="gracias.html" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
+              <input type="hidden" name="form-name" value="contacto">
+              <p class="hp-field">
+                <label>No llenes este campo: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+              </p>
+
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+              </div>
+
+              <div class="row-2">
+                <div class="field">
+                  <label for="correo">Correo electrónico</label>
+                  <input type="email" id="correo" name="correo" placeholder="tu@empresa.com" autocomplete="email" required>
+                </div>
+                <div class="field">
+                  <label for="telefono">Teléfono (opcional)</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+505 0000 0000" autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="motivo">Motivo del contacto</label>
+                <select id="motivo" name="motivo">
+                  <option value="soporte-ti">Soporte TI / Administración de sistemas</option>
+                  <option value="cloud">Cloud y automatización (Azure / AWS)</option>
+                  <option value="desarrollo">Desarrollo web / Full-stack</option>
+                  <option value="cv">Solicitar información sobre mi CV</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Describe brevemente tu necesidad o proyecto" required></textarea>
+              </div>
+
+              <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+              <p class="form-note">Al enviar aceptas que te contacte por correo o teléfono para responder tu consulta.</p>
+              <p class="form-status" data-form-status role="status" aria-live="polite"></p>
             </form>
-     
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4638.681687760636!2d-86.19876793601745!3d12.136028051631284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71560dd907880b%3A0x6c5ef4a2144f4c6a!2sManagua!5e0!3m2!1ses-419!2sni!4v1740241265326!5m2!1ses-419!2sni" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="info">
-                    <ul>
-                        <li>Mangua, Nicaragua</li>
-                        <li>Teléfono: 1800 31215</li>
-                        <li>correo: elvis@gomez.com</li>
-    
-                    </ul>
-                </div>
-            </div>
-        </div>
+          </div>
 
+          <div>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.2-.5 7.8 6 7.8-6H4.2z"/></svg>
+                </span>
+                <span>
+                  <strong>Correo</strong>
+                  <a href="mailto:elvis.gomez.f@hotmail.com">elvis.gomez.f@hotmail.com</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                </span>
+                <span>
+                  <strong>Teléfono / WhatsApp</strong>
+                  <a href="tel:+50557232389">+505 5723 2389</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>
+                  <strong>Ubicación</strong>
+                  Managua, Nicaragua · Trabajo remoto e híbrido
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.2 8h4.6v14.8H.2V8zm7.5 0h4.4v2h.1c.6-1.2 2.1-2.4 4.4-2.4 4.7 0 5.6 3.1 5.6 7.1v8.1h-4.6v-7.2c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8v7.3H7.7V8z"/></svg>
+                </span>
+                <span>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/elvisgomezfloegel/" target="_blank" rel="noopener noreferrer">/in/elvisgomezfloegel</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                </span>
+                <span>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/eogomezf" target="_blank" rel="noopener noreferrer">github.com/eogomezf</a>
+                </span>
+              </li>
+            </ul>
+
+            <div class="map-frame">
+              <iframe
+                src="https://www.google.com/maps?q=Managua,Nicaragua&output=embed"
+                title="Ubicación de Managua, Nicaragua"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <a href="#index"><img src="https://i.ibb.co/CK6j8vxq/up.png" alt=""></a>
-        <div class="data-footer">
-             <p>© 2025 Elvis Gómez  </p>
-        
-            <div class="redes">
-                <a target="_blank" href="https://www.linkedin.com/in/elvisgomezfloegel"><img class="linked" src="https://i.ibb.co/vvvQFLrd/linkd.png" alt="linkedin"></a>
-                <a target="_blank" href="https://github.com/eogomezf"><img class="linked" src="https://i.ibb.co/p6v2Dy1v/gith.png" alt="GitHub"></a>
-            </div>
-        </div>
-       
-    </footer>
+  </main>
 
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="brand" href="#inicio">EG<span>.</span></a>
+        <p style="margin-top:0.75rem; font-size:0.9rem; max-width:34ch;">
+          Soporte TI, administración de sistemas, cloud y desarrollo web full-stack.
+          Disponible para proyectos en Nicaragua y de forma remota.
+        </p>
+      </div>
+      <nav aria-label="Navegación del pie de página">
+        <h3>Navegación</h3>
+        <ul>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="mailto:elvis.gomez.f@hotmail.com">elvis.gomez.f@hotmail.com</a></li>
+          <li><a href="tel:+50557232389">+505 5723 2389</a></li>
+          <li>Managua, Nicaragua</li>
+          <li><a href="index.en.html" hreflang="en" lang="en">English version</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Elvis Gómez Floegel. Todos los derechos reservados.</p>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/elvisgomezfloegel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Elvis Gómez Floegel">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.2 8h4.6v14.8H.2V8zm7.5 0h4.4v2h.1c.6-1.2 2.1-2.4 4.4-2.4 4.7 0 5.6 3.1 5.6 7.1v8.1h-4.6v-7.2c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8v7.3H7.7V8z"/></svg>
+        </a>
+        <a href="https://github.com/eogomezf" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Elvis Gómez Floegel">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="mailto:elvis.gomez.f@hotmail.com" aria-label="Enviar correo a Elvis Gómez Floegel">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.2-.5 7.8 6 7.8-6H4.2zM4 6.7v11.3c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V6.7l-7.5 5.8a1 1 0 0 1-1 0L4 6.7z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" data-to-top aria-label="Volver al inicio de la página">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>

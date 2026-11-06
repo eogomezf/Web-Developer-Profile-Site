@@ -1,0 +1,24 @@
+{
+  "name": "Elvis Gómez Floegel — Portafolio",
+  "short_name": "EG Portafolio",
+  "description": "Portafolio de Elvis Gómez Floegel: soporte TI, administración de sistemas, cloud y desarrollo web.",
+  "lang": "es",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
