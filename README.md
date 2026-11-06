@@ -130,10 +130,13 @@ Repite con `cv-es-desarrollo-web.html` → `docs/cv/CV-ES-Desarrollo-Web.pdf`.
 
 - [ ] Reemplazar `DOMINIO` en `robots.txt` y `sitemap.xml`.
 - [ ] Actualizar `canonical`, `hreflang` y `og:url` con el dominio real.
-- [ ] Sustituir las insignias nuevas (`img/cert-aws-saa.svg`,
-      `img/cert-agile-security.svg`) por las imágenes oficiales y poner la URL
-      real de verificación de la credencial de AWS SAA (hoy apunta a la página
-      genérica de verificación de AWS).
+- [x] Insignia oficial de AWS SAA: `img/cert-aws-saa.png` (descargada de Credly)
+      con enlace personal de verificación
+      `credly.com/earner/earned/badge/625f80b6-…`.
+- [ ] Insignia oficial de Agile Security: hoy es un placeholder
+      (`img/cert-agile-security.svg`) que enlaza a LinkedIn. Cuando tengas la
+      imagen y la URL de verificación, reemplazar en `index.html` e
+      `index.en.html`.
 - [ ] Probar el formulario en Netlify y confirmar que llegan los mensajes al
       correo `elvis.gomez.f@hotmail.com`.
 - [ ] Revisar el mapa de Google (hoy usa `maps?q=Managua,Nicaragua&output=embed`);
